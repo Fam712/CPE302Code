@@ -1,1 +1,15 @@
 Hello gitHub
+always @(Op or Reg1 or Reg2)
+    begin
+        case (Op)
+         0 : Reg3 = Reg1 + Reg2;    //addition
+         1 : Reg3 = Reg1 - Reg2;    //subtraction
+			2 : Reg3 = ~Reg1;          //NOT gate
+         3 : Reg3 = ~(Reg1 & Reg2); //NAND gate 
+         4 : Reg3 = ~(Reg1 | Reg2); //NOR gate               
+         5 : Reg3 = Reg1 & Reg2;    //AND gate
+         6 : Reg3 = Reg1 | Reg2;    //OR gate    
+         7 : Reg3 = Reg1 ^ Reg2;    //XOR gate  
+        endcase 
+    end
+endmodule
