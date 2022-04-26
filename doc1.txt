@@ -5,4 +5,4 @@ Hello gitHub
 always @(Op or Reg1 or Reg2)
     end1111
 endmodule
->>>>>>> 588a2dcb9f27821b1b8870c042b9cc69900a6b03
+>>>>>>> 
